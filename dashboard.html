@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Serviopción</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="contenedor-dashboard">
+        <!-- MENÚ LATERAL -->
+        <div class="menu-lateral">
+            <h2>🏢 Serviopción</h2>
+            
+            <ul>
+                <li><a href="dashboard.html" class="activo">📊 Dashboard</a></li>
+                <li><a href="productos.html">📦 Productos</a></li>
+            </ul>
+            
+            <div class="info-usuario">
+                <p><strong id="nombreUsuario">Usuario</strong></p>
+                <p id="rolUsuario">Rol</p>
+                <button onclick="cerrarSesion()" style="margin-top: 15px; background: #e74c3c;">
+                    🚪 Cerrar Sesión
+                </button>
+            </div>
+        </div>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="contenido-principal">
+            <div class="cabecera">
+                <h1>Dashboard</h1>
+                <p>Resumen general del inventario</p>
+            </div>
+
+            <div class="fila-tarjetas">
+                <div class="tarjeta azul">
+                    <h3>Total Productos</h3>
+                    <div class="numero" id="totalProductos">0</div>
+                </div>
+                
+                <div class="tarjeta verde">
+                    <h3>Valor Inventario</h3>
+                    <div class="numero" id="valorInventario">$0</div>
+                </div>
+                
+                <div class="tarjeta naranja">
+                    <h3>Stock Bajo</h3>
+                    <div class="numero" id="stockBajo">0</div>
+                </div>
+                
+                <div class="tarjeta rojo">
+                    <h3>Sin Stock</h3>
+                    <div class="numero" id="sinStock">0</div>
+                </div>
+            </div>
+
+            <div class="contenedor-tabla">
+                <h2 style="margin-bottom: 20px;">⚠️ Productos con Stock Bajo</h2>
+                <table id="tablaAlertas">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Producto</th>
+                            <th>Stock Actual</th>
+                            <th>Stock Mínimo</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTablaAlertas">
+                        <!-- Se llena con JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/datos.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

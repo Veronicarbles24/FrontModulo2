@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviopción - Login</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="contenedor-login">
+        <div class="tarjeta-login">
+            <h1>🏢 Serviopción</h1>
+            <p>Sistema de Inventario</p>
+            
+            <form id="formularioLogin">
+                <div class="campo">
+                    <label>Usuario:</label>
+                    <input type="text" id="usuario" placeholder="Ingresa tu usuario" required>
+                </div>
+                
+                <div class="campo">
+                    <label>Contraseña:</label>
+                    <input type="password" id="contrasena" placeholder="Ingresa tu contraseña" required>
+                </div>
+                
+                <div id="mensajeError" class="error oculto"></div>
+                
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            
+            <p class="info-demo">💡 Demo: admin / admin123</p>
+        </div>
+    </div>
+    
+    <script src="js/datos.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
