@@ -49,4 +49,4 @@ function mostrarError(mensaje) {
     }, 3000);
 }
 
-console.log('✅ login.js cargado correctamente');
+console.log(' login.js cargado correctamente');

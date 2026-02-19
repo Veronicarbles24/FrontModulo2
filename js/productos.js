@@ -135,7 +135,7 @@ function eliminarProducto(id) {
     if (confirm(`¿Estás seguro de eliminar "${producto.nombre}"?`)) {
         BaseDatos.eliminarProducto(id);
         mostrarProductos();
-        alert('✅ Producto eliminado correctamente');
+        alert('Producto eliminado correctamente');
     }
 }
 
@@ -157,10 +157,10 @@ document.getElementById('formularioProducto').addEventListener('submit', functio
     // Si estamos editando, actualizar; si no, agregar nuevo
     if (productoEditandoId) {
         BaseDatos.actualizarProducto(productoEditandoId, datosProducto);
-        alert('✅ Producto actualizado correctamente');
+        alert(' Producto actualizado correctamente');
     } else {
         BaseDatos.agregarProducto(datosProducto);
-        alert('✅ Producto agregado correctamente');
+        alert(' Producto agregado correctamente');
     }
     
     // Cerrar modal y actualizar tabla
@@ -194,4 +194,4 @@ document.getElementById('modalProducto').addEventListener('click', function(even
 // Cargar productos al iniciar
 mostrarProductos();
 
-console.log('✅ productos.js cargado correctamente');
+console.log(' productos.js cargado correctamente');

@@ -209,7 +209,7 @@ const BaseDatos = {
         this.guardar(this.TABLAS.USUARIOS, usuarios);
         this.guardar(this.TABLAS.PRODUCTOS, productos);
         
-        console.log('✅ Datos de ejemplo cargados correctamente');
+        console.log(' Datos de ejemplo cargados correctamente');
     },
 
     // Borrar todos los datos
@@ -223,4 +223,4 @@ const BaseDatos = {
 
 // Inicializar datos cuando se carga la página
 BaseDatos.inicializarDatos();
-console.log('✅ datos.js cargado correctamente');
+console.log(' datos.js cargado correctamente');

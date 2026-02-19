@@ -84,7 +84,7 @@ function mostrarProductosStockBajo() {
         tbody.innerHTML = `
             <tr>
                 <td colspan="5" style="text-align: center; padding: 20px; color: #666;">
-                    ✅ No hay productos con stock bajo
+                     No hay productos con stock bajo
                 </td>
             </tr>
         `;
@@ -109,4 +109,4 @@ function mostrarProductosStockBajo() {
 mostrarEstadisticas();
 mostrarProductosStockBajo();
 
-console.log('✅ dashboard.js cargado correctamente');
+console.log('dashboard.js cargado correctamente');
